@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <div class="vertical-section">
+        <p class="top-info" id="current-shapes">Number of current shapes: 0</p>
+        <p class="top-info" id="surface-area">Surface Area Occupied by Shapes: 0(in sq px)</p>
+    </div>
+    <div id='app' class="vertical-section"></div>
+    <div class="vertical-section">
+        <div class="button-container">
+            <button id="shapes-second-plus">+</button>
+            <button id="shapes-second-minus">-</button>
+            <p class="bottom-info" id="shapes-second-text">Number of shapes per second: 0</p>
+        </div>
+        <div class="button-container">
+            <button id="gravity-plus">+</button>
+            <button id="gravity-minus">-</button>
+            <p class="bottom-info" id="gravity-text">Gravity Value: 0</p>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="vertical-section">
+        <p id='pixi-js'></p>
+        <p id='pure-mvc'></p>
+    </div>
+
+    <script src="/main.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+#app{
+    clear: both;
+    border: 1px solid black;
+    height: 400px;
+}
+p.top-info{
+    float: left;
+    border: 1px solid black;
+    margin-right: 10px;
+    padding: 2px;
+    width: 45%;
+}
+#pixi-js, #pure-mvc{
+    float: left;
+    font-size: 8px;
+    margin-right: 20px;
+}
+div.button-container{
+    float: left;
+    width: 50%;
+}
+div.vertical-section{
+    width: 600px;
+}
+
+/*orientation lock*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }

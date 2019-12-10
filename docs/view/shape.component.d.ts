@@ -1,0 +1,34 @@
+import { Point, Graphics } from 'pixi.js';
+export declare class ShapeComponent {
+    static readonly FAST_PI: number;
+    static readonly THREE_SIDES = "3 sides";
+    static readonly FOUR_SIDES = "4 sides";
+    static readonly FIVE_SIDES = "5 sides";
+    static readonly SIX_SIDES = "6 sides";
+    static readonly CIRCLE = "circle";
+    static readonly ELLIPSE = "ellipse";
+    static readonly SHAPES: string[];
+    static readonly RED = 16711680;
+    static readonly GREEN = 65280;
+    static readonly BLUE = 255;
+    static readonly COLORS: number[];
+    static readonly STANDARD_SIDE = 50;
+    private _shape;
+    private _type;
+    private _area;
+    private _color;
+    private _velocity;
+    private _visible;
+    constructor(randomNumber: number);
+    getType(value: number): string;
+    getColor(value: number): number;
+    onTouch(): void;
+    draw(): void;
+    getShape(): Graphics;
+    getArea(): number;
+    updateVelocity(acceleration: number): void;
+    init(): void;
+    visible: boolean;
+    makePolygon(arr: Point[]): void;
+    areaFinder(arr: Point[]): void;
+}
